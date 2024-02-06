@@ -1,0 +1,391 @@
+
+<h1 style="padding: 10px; background: green; color: white">
+  This is the main heading that is wrapped in "h1" tags.
+</h1>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada vehicula dictum. Integer tristique sapien nec lectus lobortis placerat.
+  <strong style="color: blue;"> MAKE THIS TEXT BLUE.</strong>
+  Vestibulum molestie semper facilisis. Vestibulum finibus sit amet metus eget elementum. Morbi sed eros orci.
+  <em style="color: blue;">MAKE THIS TEXT BLUE.</em>
+  Nullam lacinia interdum felis sit amet aliquet.
+</p>
+<img style="width: 100%; border-radius: 50% " src="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fprod-upp-image-read.ft.com%2F158c46de-cae2-11e9-af46-b09e8bfe60c0?source=amp&fit=scale-down&width=2048" alt="" />
+<h3 style="color: red;">
+  This is the subheadline that is wrapped in "h3" tags.
+</h3>
+<p>
+  <a href="https://www.google.com.au" style="color:green;text-decoration: underline;">I'm a link to google</a>
+</p>
+<iframe style="width: 600px; height: 400px;" src="https://www.youtube.com/embed/K8KgP2aOXcA"></iframe>
+
+<h1>This a heading 1 element</h1>
+<p>
+ This is the start of a really short paragraph. It has some other nested tags to emphasise/highlight some of the text. For example:
+ <b>This is bold text.</b>
+ And, even more exciting:
+ <i>This is italic text!</i>
+</p>
+<p>
+ This is a paragraph explaining the image below.
+ Remember: images use a self-closing tag, and the image URL is set by the "src" attribute.
+</p>
+<img src="https://i.ibb.co/hZSW3Fg/ice-cream-bowls.png" />
+<h3>This is a subheadline wrapped in "h3" tags.</h3>
+<p>
+ If we have a URL like the one at the end of this paragraph then it should be hyperlinked using the correct tag:
+ <a href >https://www.google.com.au</a>
+</p>
+<p>Please wrap my favourite YouTube video below in the correct tag</p>
+<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+<p>
+ As a last favour, please use an image tag with a src attribute to display the Gif below.
+ Refer to the example image above as a hint for the correct tag and structure
+</p>
+<img src= https://media1.giphy.com/media/fnMffPDWcr58k/giphy-downsized.gif >
+
+ <style type="text/css">
+  .background {
+    background: lightgrey;
+  }
+  .head {
+    background: white;
+  }
+  .eyeball {
+    background: brown;
+    border-color: green;
+  }
+  .pupil {
+    color: black;
+  }
+  .beak {
+    color: yellow;
+  }
+  .body {
+    background: green;
+  }
+  .wing {
+    color: yellow;
+  }
+  .drumstick {
+    color: yellow;
+  }
+  .drumstick-right {
+    color: yellow;
+  }
+</style>
+<div class="canvas background">
+  <div class="air background"></div>
+  <div class="head">
+    <div class="eyeball">
+      <span class="pupil">&middot;</span>
+    </div>
+    <div class="beak">
+      <strong>&gt;</strong>
+    </div>
+  </div>
+  <div class="body">
+    <div class="wing">
+      <strong>&lt;
+      </strong>
+    </div>
+  </div>
+  <div class="drumsticks">
+    <div class="drumstick">|
+      <br />/|
+    </div>
+    <div class="drumstick drumstick-right">|
+      <br />/|
+    </div>
+  </div>
+</div>
+
+Hero:
+<div id="demo_panel" class='jumbotron text-center'>
+  <div class='container-lg d-flex'>
+    <div class='content'>
+      <h1 class='display-4 headline'>This is a big hero panel!</h1>
+      <p class='lead description'>All the code you see here is editable directly through the HTML editors in the sidebar</p>
+      <p>
+        <a href="https://chat.openai.com/" class='btn btn-primary btn-lg'>
+          Visit some page
+        </a>
+      </p>
+    </div>
+    <img class="align-self-center ml-auto" style="width:auto; height:400px;" src="https://m.media-amazon.com/images/I/51EEb400idL._AC_UF894,1000_QL80_.jpg">
+  </div>
+</div>
+#demo_panel {
+  background: #E9ECEF;
+}
+#demo_panel .headline {
+  font-weight: bold;
+}
+#demo_panel .description {
+  color: black;
+}
+#demo_panel .btn {
+  border: 2px black dashed;
+}
+.container-lg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap for smaller screens */
+}
+.align-self-center.ml-auto {
+  width: auto;
+  height: 400px;
+  margin-left: auto;
+}
+
+Card-row:
+<div class="container py-5">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="https://source.unsplash.com/random/400x300">
+      <h2>Flower 1</h2>
+      <p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+      <p><a class="btn btn-secondary" href="https://chat.openai.com/" role="button">View details &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+      <img src="https://source.unsplash.com/random/400x300">
+      <h2>Flower 2</h2>
+      <p>Standing on the frontline when the bombs start to fall. Heaven is jealous of our love, angels are crying from up above. Can't replace you with a million rings. Boy, when you're with me I'll give you a taste. There's no going back. Before you met me I was alright but things were kinda heavy. Heavy is the head that wears the crown.</p>
+      <p><a class="btn btn-secondary" href="https://chat.openai.com/" role="button">View details &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+      <img src="https://source.unsplash.com/random/400x300">
+      <h2>Flower 3</h2>
+      <p>Playing ping pong all night long, everything's all neon and hazy. Yeah, she's so in demand. She's sweet as pie but if you break her heart. But down to earth. It's time to face the music I'm no longer your muse. I guess that I forgot I had a choice.</p>
+      <p><a class="btn btn-secondary" href="https://chat.openai.com/" role="button">View details &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+      <img src="https://source.unsplash.com/random/400x300">
+      <h2>Flower 4</h2>
+      <p>Playing ping pong all night long, everything's all neon and hazy. Yeah, she's so in demand. She's sweet as pie but if you break her heart. But down to earth. It's time to face the music I'm no longer your muse. I guess that I forgot I had a choice.</p>
+      <p><a class="btn btn-secondary" href="https://chat.openai.com/" role="button">View details &raquo;</a></p>
+    </div>
+  </div>
+</div>
+
+Pricing block:
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">Pricing</h1>
+  <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
+</div>
+<div class="container">
+  <div class="card-deck mb-3 text-center">
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Free</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>10 users included</li>
+          <li>2 GB of storage</li>
+          <li>Email support</li>
+          <li>Help center access</li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Pro</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="cartle">$15 <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>20 users included</li>
+          <li>10 GB of storage</li>
+          <li>Priority email support</li>
+          <li>Help center access</li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Enterprise</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>30 users included</li>
+          <li>15 GB of storage</li>
+          <li>Phone and email support</li>
+          <li>Help center access</li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+.container {
+  max-width: 960px;
+}
+.pricing-header {
+  max-width: 700px;
+}
+.card-deck .card {
+  min-width: 220px;
+}
+12:39
+Featured content block:
+<div class="container py-5"><div class="row featurette">
+  <div class="col-md-7">
+    <h2 class="featurette-heading">Featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+    <p class="lead">Some great placeholder content for the featurette here. Imagine some exciting prose here.</p>
+  </div>
+  <div class="col-md-5 bg-primary">
+  <img src="https://insanelygoodrecipes.com/wp-content/uploads/2020/07/Cup-Of-Creamy-Coffee-500x500.png" class="card-img-top" alt="coffee" />
+  </div>
+</div>
+</div>
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+@media (min-width: 40em) {
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+Custom block:
+<div class='jumbotron text-center'>
+  <h3>
+ Read the instructions and Paste the HTML for the block here
+  </h3>
+  <div class="card" style="width: 18rem;">
+  <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/flat-white-3402c4f.jpg?quality=90&resize=500,454" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="https://www.google.com/" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+
+<body>
+  <div style="float:left;">
+    <h1>Welcome to Facebook</h1>
+    <img src="https://1000logos.net/wp-content/uploads/2016/11/Facebook-Logo-2019.png" style="width:500px; height:400px;">
+    <p> Facebook, inc. is an american blablabla </p>
+    <a href="https://getbootstrap.com/docs/4.6/layout/overview/">for more click here</a>
+   </div>
+  </Div style="width:300px; float:center;">
+  <form action="/action_page.php">
+    Name:<br>
+    <input type="text" value="enter your name"><br>
+    Age:<br>
+    <input type="number" value="enter your age"><br>
+    Gender:<br>
+    <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> female<br> <br>
+    <input type="button" value="Signup">
+  </form>
+</div>
+</body>
+
+Color animation:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Page Background with Grid Overlay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="grid-container">
+            <div class="grid-cell"><div class="circle"></div></div>
+            <div class="grid-cell"><div class="circle"></div></div>
+            <div class="grid-cell"><div class="circle"></div></div>
+            <div class="grid-cell"><div class="circle"></div></div>
+            <div class="grid-cell"><div class="circle"></div></div>
+            <div class="grid-cell"><div class="circle"></div></div>
+            <div class="grid-cell"><div class="circle"></div></div>
+            <div class="grid-cell"><div class="circle"></div></div>
+            <div class="grid-cell"><div class="circle"></div></div>
+        </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
+CSS:
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.background {
+    background-image: url('https://images.ctfassets.net/pujs1b1v0165/3BO771q41DgmdLsbQyq0Sk/0f46cbd4806bf761c556afb47ba1f2c3/how_long_do_ducks_live.jpg?w=1280');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(30vh, 1fr));
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+.grid-cell {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    background-color: rgba(64, 224, 208, 1);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: opacity 0.3s ease-in-out;
+}
+.grid-cell:hover .circle {
+    opacity: 0;
+}
+JS:
+// List of predefined colors
+var colors = ["blue", "orange", "red", "yellow"];
+var currentColorIndex = 0;
+// Function to apply a random color to grid cells
+function changeCellColors() {
+    const gridCells = document.querySelectorAll('.grid-cell');
+    gridCells.forEach((cell) => {
+        const randomColor = colors[currentColorIndex];
+        cell.querySelector('.circle').style.backgroundColor = randomColor;
+    });
+    // Increment the currentColorIndex or reset it to 0 when it reaches the end of the array
+    currentColorIndex = (currentColorIndex + 1) % colors.length;
+}
+// Event listener for window click
+window.addEventListener('click', changeCellColors);
