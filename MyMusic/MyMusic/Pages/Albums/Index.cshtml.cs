@@ -21,12 +21,19 @@ namespace MyMusic.Pages.Albums
 
         public IList<Album> Album { get;set; } = default!;
 
+        //public IList<SongAlbum> SongAlbum { get;set; } = default!;
+
+        public IList<Song> Songs { get; set; } = default!;
+
         public async Task OnGetAsync()
         {
             if (_context.Albums != null)
             {
-                Album = await _context.Albums.ToListAsync();
+                Album = await _context.Albums.Include(a => a.Songs).ToListAsync();      
             }
         }
+        
+
+      
     }
 }

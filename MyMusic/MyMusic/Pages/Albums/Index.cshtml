@@ -15,23 +15,34 @@
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Album[0].Title)
+               @Html.DisplayNameFor(model => model.Songs[0].Id)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Album) {
+@foreach (var album in Model.Album) 
+{ 
+
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Title)
-                @Html.DisplayFor(modelItem => item.Id)
+                @Html.DisplayFor(modelItem => album.Title)
+                @Html.DisplayFor(modelItem => album.Id)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                    @foreach (var song in album.Songs) {
+                        @Html.DisplayFor(modelItem => song.SongName)
+                        <br />
+                    }
+                </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@album.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@album.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@album.Id">Delete</a>
             </td>
         </tr>
 }
     </tbody>
-</table>
+</table
+
+

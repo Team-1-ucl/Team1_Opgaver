@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using MyMusic.Data;
+using Microsoft.AspNetCore.Identity;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -8,6 +9,9 @@ builder.Services.AddRazorPages();
 
 builder.Services.AddDbContext<MusicContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MusicContext") ?? throw new InvalidOperationException("Connection string 'MusicContext' not found.")));
+
+builder.Services.AddDefaultIdentity<MyMusicUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<MyMusicContext>();
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
@@ -39,6 +43,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseAuthentication();;
 
 app.UseAuthorization();
 

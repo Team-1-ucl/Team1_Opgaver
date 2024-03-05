@@ -14,25 +14,25 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Song[0].SongName)
+                @Html.DisplayNameFor(model => model.Songs[0].SongName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Song[0].Id)
+                @Html.DisplayNameFor(model => model.Songs[0].Id)
 
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Song[0].Album)
+                @Html.DisplayNameFor(model => model.Songs[0].Album)
 
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Song[0].Artist)
+                @Html.DisplayNameFor(model => model.Songs[0].Artist)
 
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Song) {
+@foreach (var item in Model.Songs) {
         <tr>
                 <td>
                     @Html.DisplayFor(modelItem => item.SongName)
