@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\45504\\Documents\\Skole\\3.Semester\\Koder\\MyMusic\\MyMusic\\MyMusic.csproj": {}
+    "C:\\Users\\45504\\Desktop\\Team1_Opgaver\\MyMusic\\MyMusic\\MyMusic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\45504\\Documents\\Skole\\3.Semester\\Koder\\MyMusic\\MyMusic\\MyMusic.csproj": {
+    "C:\\Users\\45504\\Desktop\\Team1_Opgaver\\MyMusic\\MyMusic\\MyMusic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\45504\\Documents\\Skole\\3.Semester\\Koder\\MyMusic\\MyMusic\\MyMusic.csproj",
+        "projectUniqueName": "C:\\Users\\45504\\Desktop\\Team1_Opgaver\\MyMusic\\MyMusic\\MyMusic.csproj",
         "projectName": "MyMusic",
-        "projectPath": "C:\\Users\\45504\\Documents\\Skole\\3.Semester\\Koder\\MyMusic\\MyMusic\\MyMusic.csproj",
+        "projectPath": "C:\\Users\\45504\\Desktop\\Team1_Opgaver\\MyMusic\\MyMusic\\MyMusic.csproj",
         "packagesPath": "C:\\Users\\45504\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\45504\\Documents\\Skole\\3.Semester\\Koder\\MyMusic\\MyMusic\\obj\\",
+        "outputPath": "C:\\Users\\45504\\Desktop\\Team1_Opgaver\\MyMusic\\MyMusic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\45504\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -82,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

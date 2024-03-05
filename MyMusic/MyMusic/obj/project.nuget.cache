@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z3MYItXkyONY4s9VpdvrPxq8Tplyo6egi3xeC/BIhBAF3jlCgaWW5U8u074QEEuYwRLuHvlreUyE+yxGAgsT6w==",
+  "dgSpecHash": "tMYbA28Djnd/gzM4S0tE73H/sxpVu/UneSIlK4uF1jcsigD0mJl0xZnvVfgPtxcEq6dp/KdgSrpIu30/Yd2X+w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\45504\\Documents\\Skole\\3.Semester\\Koder\\MyMusic\\MyMusic\\MyMusic.csproj",
+  "projectFilePath": "C:\\Users\\45504\\Desktop\\Team1_Opgaver\\MyMusic\\MyMusic\\MyMusic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\45504\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\45504\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
