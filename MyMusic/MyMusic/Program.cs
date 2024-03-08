@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using MyMusic.Data;
+using MyMusic.Middelware;
+using MyMusic.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -11,7 +13,14 @@ builder.Services.AddDbContext<MusicContext>(options =>
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
+builder.Services.AddSingleton<IService, Service>();
+
 var app = builder.Build();
+
+app.MapWhen(context => context.Request.Path.StartsWithSegments("/Album/Index"), appBuilder =>
+{
+    appBuilder.UseHttpLogging();
+});
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -35,7 +44,11 @@ using (var scope = app.Services.CreateScope())
     DbInitializer.Initialize(context);
 }
 
+
+
 app.UseHttpsRedirection();
+
+
 app.UseStaticFiles();
 
 app.UseRouting();
@@ -43,5 +56,7 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
+
+app.UseJustinsMiddleware();
 
 app.Run();
