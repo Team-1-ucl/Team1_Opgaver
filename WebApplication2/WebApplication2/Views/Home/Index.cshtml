@@ -3,21 +3,28 @@
     ViewData["Title"] = "Home Page";
 }
 
+@{
+    int? daysToShow = null;
+}
 
 @using (Html.BeginForm("Index", "Home", FormMethod.Post))
 {
-    <p>
-        By: <input type="text" name="city" />
-        <input type="submit" value="Søg" />
-    </p>
+<p>
+    By: <input type="text" name="city" />
+</p>
+<p>
+        Hvor mange dage: <input type="number" name="@daysToShow." min="1" max="5" />
+</p>
+<input type="submit" value="Søg" />
 }
+   
 @if (Model != null)
 {
-    @foreach (var i in Model.list.DistinctBy(x => x.Date))
+     
+    @for (int i = 0; i < daysToShow; i++)
     {
-
         <div>
-            <h2>Weather Information for @Model.city.name, @i.Date</h2>
+            <h2>Weather Information for @Model.city.name </h2>
             <table class="table">
                 <thead>
                     <tr>
@@ -42,8 +49,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var item in Model.list.Where(x => x.Date == i.Date))
+                    @foreach (var item in Model.list.Where(x => DateTimeOffset.FromUnixTimeSeconds(x.dt).DateTime.Date == DateTime.Today.AddDays(i).Date))
                     {
+                        
                         <tr>
                             <td>
                                 @foreach (var desc in item.weather)
