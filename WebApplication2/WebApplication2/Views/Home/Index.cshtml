@@ -13,7 +13,15 @@
 <p>
         Hvor mange dage: <input type="number" name="daysToShow" min="1" max="5" value="@daysToShow" />
 </p>
-<input type="submit" value="Søg" />
+    <p>
+        Units:
+        <button type="submit" name="units" value="metric">Metric</button>
+        <button type="submit" name="units" value="imperial">Imperial</button>
+    </p>
+    <p>
+        <input type="checkbox" name="showRain" id="showRain" value="true" />
+        <label for="showRain">Show items with rain</label>
+    </p>
 }
 @if (Model != null)
 {
@@ -42,57 +50,94 @@
                         <th>
                             Vind retning
                         </th>
+                        <th>
+                            temperatur
+                        </th>
 
 
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var item in Model.list.Where(x => DateTimeOffset.FromUnixTimeSeconds(x.dt).DateTime.Date == DateTime.Today.AddDays(i).Date))
+                    @if (ViewBag.ShowRain == true && Model.list.Where(x => x.rain._3h !=null))
                     {
-                        
-                        <tr>
-                            <td>
-                                @foreach (var desc in item.weather)
-                                {
-
-
-                                    string url = $"https://openweathermap.org/img/wn/{desc.icon}.png";
-
-                                    <img class="img-fluid" src="@url" />
-                                    @* @Html.DisplayFor(model => desc.main) *@
-
-                                }
-                            </td>
-
-                            <td>
-                                @Html.DisplayFor(model => item.clouds.all)
-                            </td>
-
-                            <td>
-                                @Html.DisplayFor(model => item.rain._3h)
-                            </td>
-
-                            <td>
-                                @Html.DisplayFor(model => item.wind.speed)
-                            </td>
-
-                            <td>
-                                @if (true)
-                                {
-                                    var degree = item.wind.deg;
-                                    string direction = item.wind.GetWindDirection(degree);
-                                    @direction
-
-                                }
-                                else
-                                {
-                                    <text>N/A</text>
-                                }
-                                @Html.DisplayFor(model => item.wind.deg)
-                            </td>
-
-
-                        </tr>
+                        @foreach (var item in Model.list
+                        .Where(x => DateTimeOffset.FromUnixTimeSeconds(x.dt).DateTime.Date == DateTime.Today.AddDays(i).Date))
+                        {
+                            <tr>
+                                <td>
+                                    @foreach (var desc in item.weather)
+                                    {
+                                        string url = $"https://openweathermap.org/img/wn/{desc.icon}.png";
+                                        <img class="img-fluid" src="@url" />
+                                    }
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(model => item.clouds.all)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(model => item.rain._3h)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(model => item.wind.speed)
+                                </td>
+                                <td>
+                                    @if (true)
+                                    {
+                                        var degree = item.wind.deg;
+                                        string direction = item.wind.GetWindDirection(degree);
+                                        @direction
+                                    }
+                                    else
+                                    {
+                                        <text>N/A</text>
+                                    }
+                                    @Html.DisplayFor(model => item.wind.deg)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(model => item.main.temp)
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        @foreach (var item in Model.list.Where(x => DateTimeOffset.FromUnixTimeSeconds(x.dt).DateTime.Date == DateTime.Today.AddDays(i).Date))
+                        {
+                            <tr>
+                                <td>
+                                    @foreach (var desc in item.weather)
+                                    {
+                                        string url = $"https://openweathermap.org/img/wn/{desc.icon}.png";
+                                        <img class="img-fluid" src="@url" />
+                                    }
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(model => item.clouds.all)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(model => item.rain._3h)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(model => item.wind.speed)
+                                </td>
+                                <td>
+                                    @if (true)
+                                    {
+                                        var degree = item.wind.deg;
+                                        string direction = item.wind.GetWindDirection(degree);
+                                        @direction
+                                    }
+                                    else
+                                    {
+                                        <text>N/A</text>
+                                    }
+                                    @Html.DisplayFor(model => item.wind.deg)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(model => item.main.temp)
+                                </td>
+                            </tr>
+                        }
                     }
                 </tbody>
             </table>

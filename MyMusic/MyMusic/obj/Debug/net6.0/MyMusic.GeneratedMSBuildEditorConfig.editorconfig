@@ -9,79 +9,79 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MyMusic
 build_property.RootNamespace = MyMusic
-build_property.ProjectDir = C:\Users\45217\Desktop\Team1_Opgaver\MyMusic\MyMusic\
+build_property.ProjectDir = C:\Projects\opgaver\MyMusic\MyMusic\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\45217\Desktop\Team1_Opgaver\MyMusic\MyMusic
+build_property.MSBuildProjectDirectory = C:\Projects\opgaver\MyMusic\MyMusic
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/45217/Desktop/Team1_Opgaver/MyMusic/MyMusic/Pages/Albums/Create.cshtml]
+[C:/Projects/opgaver/MyMusic/MyMusic/Pages/Albums/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxidW1zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/45217/Desktop/Team1_Opgaver/MyMusic/MyMusic/Pages/Albums/Delete.cshtml]
+[C:/Projects/opgaver/MyMusic/MyMusic/Pages/Albums/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxidW1zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/45217/Desktop/Team1_Opgaver/MyMusic/MyMusic/Pages/Albums/Details.cshtml]
+[C:/Projects/opgaver/MyMusic/MyMusic/Pages/Albums/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxidW1zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/45217/Desktop/Team1_Opgaver/MyMusic/MyMusic/Pages/Albums/Edit.cshtml]
+[C:/Projects/opgaver/MyMusic/MyMusic/Pages/Albums/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxidW1zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/45217/Desktop/Team1_Opgaver/MyMusic/MyMusic/Pages/Albums/Index.cshtml]
+[C:/Projects/opgaver/MyMusic/MyMusic/Pages/Albums/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxidW1zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/45217/Desktop/Team1_Opgaver/MyMusic/MyMusic/Pages/Error.cshtml]
+[C:/Projects/opgaver/MyMusic/MyMusic/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/45217/Desktop/Team1_Opgaver/MyMusic/MyMusic/Pages/Index.cshtml]
+[C:/Projects/opgaver/MyMusic/MyMusic/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/45217/Desktop/Team1_Opgaver/MyMusic/MyMusic/Pages/Privacy.cshtml]
+[C:/Projects/opgaver/MyMusic/MyMusic/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/45217/Desktop/Team1_Opgaver/MyMusic/MyMusic/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Projects/opgaver/MyMusic/MyMusic/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/45217/Desktop/Team1_Opgaver/MyMusic/MyMusic/Pages/Songs/Create.cshtml]
+[C:/Projects/opgaver/MyMusic/MyMusic/Pages/Songs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29uZ3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/45217/Desktop/Team1_Opgaver/MyMusic/MyMusic/Pages/Songs/Delete.cshtml]
+[C:/Projects/opgaver/MyMusic/MyMusic/Pages/Songs/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29uZ3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/45217/Desktop/Team1_Opgaver/MyMusic/MyMusic/Pages/Songs/Details.cshtml]
+[C:/Projects/opgaver/MyMusic/MyMusic/Pages/Songs/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29uZ3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/45217/Desktop/Team1_Opgaver/MyMusic/MyMusic/Pages/Songs/Edit.cshtml]
+[C:/Projects/opgaver/MyMusic/MyMusic/Pages/Songs/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29uZ3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/45217/Desktop/Team1_Opgaver/MyMusic/MyMusic/Pages/Songs/Index.cshtml]
+[C:/Projects/opgaver/MyMusic/MyMusic/Pages/Songs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29uZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/45217/Desktop/Team1_Opgaver/MyMusic/MyMusic/Pages/_ViewImports.cshtml]
+[C:/Projects/opgaver/MyMusic/MyMusic/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/45217/Desktop/Team1_Opgaver/MyMusic/MyMusic/Pages/_ViewStart.cshtml]
+[C:/Projects/opgaver/MyMusic/MyMusic/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/45217/Desktop/Team1_Opgaver/MyMusic/MyMusic/Pages/Shared/_Layout.cshtml]
+[C:/Projects/opgaver/MyMusic/MyMusic/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-pqty1bgrjx
