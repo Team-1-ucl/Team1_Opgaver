@@ -4,85 +4,99 @@
 }
 
 
-@foreach (var i in Model.list.DistinctBy(x => x.Date))
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
 {
+    <p>
+        By: <input type="text" name="city" />
+        <input type="submit" value="Søg" />
+    </p>
+}
+@if (Model != null)
+{
+    @foreach (var i in Model.list.DistinctBy(x => x.Date))
+    {
 
-    <div>
-        <h2>Weather Information for @Model.city.name, @i.Date</h2>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>
-                        Icon
-                    </th>
-                    <th>
-                        Skydække
-                    </th>
-                    <th>
-                        Regn
-                    </th>
-                    
-                    <th>
-                        Vind hastighed
-                    </th>
-                    <th>
-                        Vind retning
-                    </th>
-
-
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model.list.Where(x => x.Date == i.Date))
-                {
+        <div>
+            <h2>Weather Information for @Model.city.name, @i.Date</h2>
+            <table class="table">
+                <thead>
                     <tr>
-                        <td>
-                            @foreach (var desc in item.weather)
-                            {
-                                
-                                    
-                                           string url = $"https://openweathermap.org/img/wn/{desc.icon}.png";
-                                    
-                                    <img class="img-fluid" src="@url" />
-                                    @* @Html.DisplayFor(model => desc.main) *@
-                                
-                            }
-                        </td>
+                        <th>
+                            Icon
+                        </th>
+                        <th>
+                            Skydække
+                        </th>
+                        <th>
+                            Regn
+                        </th>
 
-                        <td>
-                            @Html.DisplayFor(model => item.clouds.all)
-                        </td>
-                        
-                        <td>
-                            @Html.DisplayFor(model => item.rain._3h)
-                        </td>
+                        <th>
+                            Vind hastighed
+                        </th>
+                        <th>
+                            Vind retning
+                        </th>
 
-                        <td>
-                            @Html.DisplayFor(model => item.wind.speed)
-                        </td>
-
-                        <td>
-                            @if (true)
-                            {
-                                var degree = item.wind.deg;
-                                string direction = item.wind.GetWindDirection(degree);
-                                @direction
-                                
-                            }
-                            else
-                            {
-                                <text>N/A</text>
-                            }
-                            @Html.DisplayFor(model=> item.wind.deg)
-                        </td>
-                        
 
                     </tr>
-                }
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.list.Where(x => x.Date == i.Date))
+                    {
+                        <tr>
+                            <td>
+                                @foreach (var desc in item.weather)
+                                {
 
-    </div>
 
+                                    string url = $"https://openweathermap.org/img/wn/{desc.icon}.png";
+
+                                    <img class="img-fluid" src="@url" />
+                                    @* @Html.DisplayFor(model => desc.main) *@
+
+                                }
+                            </td>
+
+                            <td>
+                                @Html.DisplayFor(model => item.clouds.all)
+                            </td>
+
+                            <td>
+                                @Html.DisplayFor(model => item.rain._3h)
+                            </td>
+
+                            <td>
+                                @Html.DisplayFor(model => item.wind.speed)
+                            </td>
+
+                            <td>
+                                @if (true)
+                                {
+                                    var degree = item.wind.deg;
+                                    string direction = item.wind.GetWindDirection(degree);
+                                    @direction
+
+                                }
+                                else
+                                {
+                                    <text>N/A</text>
+                                }
+                                @Html.DisplayFor(model => item.wind.deg)
+                            </td>
+
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
+
+    }
+}
+else
+{
+    <p>No weather data available</p>
 }
 

@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Diagnostics;
 using WebApplication2.Models;
+using WebApplication2.Services;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WebApplication2.Controllers
@@ -9,45 +10,20 @@ namespace WebApplication2.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IMyWeatherService _myWeatherService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IMyWeatherService myWeatherService)
         {
             _logger = logger;
+            _myWeatherService = myWeatherService;
         }
 
-        public async Task<IActionResult> Index()
+        
+        public async Task<IActionResult> Index(string city)
         {
-            Root root = await GetWeatherAsync("Borup");
+            Root root = await _myWeatherService.GetWeatherAsync(city);
             return View(root);
         }
-
-        public async Task<Root> GetWeatherAsync(string City)
-        {
-            HttpClient client = new()
-            {
-                BaseAddress = new Uri("https://api.openweathermap.org/data/2.5/forecast")
-            };
-
-
-            var response = await client.GetStringAsync(client.BaseAddress + $"?q={City}&appid=747bcc2140e625521d195c8cb07c6ef0");
-
-            var weatherData = JsonConvert.DeserializeObject<Root>(response);
-            
-
-            return weatherData;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -1,3 +1,5 @@
+using WebApplication2.Services;
+
 namespace WebApplication2
 {
     public class Program
@@ -9,13 +11,15 @@ namespace WebApplication2
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            builder.Services.AddHttpClient("Weather", x =>
+            {
+                x.BaseAddress = new Uri("https://api.openweathermap.org/data/2.5/forecast");
+            });
+            builder.Services.AddScoped<IMyWeatherService, MyWeatherService>();
+
             var app = builder.Build();
 
-            //builder.Services.AddHttpClient("Weather", x =>
-            //    {
-            //        x.BaseAddress = new Uri("https://api.openweathermap.org/data/2.5/forecast");
-            //    }
-            //);
+           
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
