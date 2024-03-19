@@ -13,9 +13,10 @@ namespace WebApplication2.Services
         public async Task<Root> GetWeatherAsync(string city, int cnt)
         {
             HttpClient client = _httpClientFactory.CreateClient("Weather");
+
             
             
-            HttpResponseMessage response = await client.GetAsync(client.BaseAddress + $"?&{cnt}&q={city}&appid=747bcc2140e625521d195c8cb07c6ef0");
+            HttpResponseMessage response = await client.GetAsync(client.BaseAddress + $"?&cnt={cnt}&q={city}&appid=747bcc2140e625521d195c8cb07c6ef0");
             if (response.IsSuccessStatusCode)
             {
                 string responseBody = await response.Content.ReadAsStringAsync();
@@ -33,7 +34,7 @@ namespace WebApplication2.Services
             HttpClient client = _httpClientFactory.CreateClient("Weather");
 
 
-            HttpResponseMessage response = await client.GetAsync(client.BaseAddress + $"?&cnt=3&q={city}&appid=747bcc2140e625521d195c8cb07c6ef0");
+            HttpResponseMessage response = await client.GetAsync(client.BaseAddress + $"?q={city}&appid=747bcc2140e625521d195c8cb07c6ef0");
             if (response.IsSuccessStatusCode)
             {
                 string responseBody = await response.Content.ReadAsStringAsync();

@@ -19,9 +19,10 @@ namespace WebApplication2.Controllers
         }
 
         
-        public async Task<IActionResult> Index(string city, int cnt)
+        public async Task<IActionResult> Index(string city, int daysToShow)
         {
-            Root root = await _myWeatherService.GetWeatherAsync(city, cnt);
+            ViewData["DaysToShow"] = daysToShow;
+            Root root = await _myWeatherService.GetWeatherAsync(city);
             return View(root);
         }
 

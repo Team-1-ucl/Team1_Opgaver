@@ -1,25 +1,23 @@
 ﻿@model WebApplication2.Models.Root
 @{
     ViewData["Title"] = "Home Page";
-}
-
-@{
-    int? daysToShow = null;
+    int? daysToShow = ViewData["DaysToShow"] as int?; // Default value
 }
 
 @using (Html.BeginForm("Index", "Home", FormMethod.Post))
 {
+    
 <p>
     By: <input type="text" name="city" />
 </p>
 <p>
-        Hvor mange dage: <input type="number" name="@daysToShow." min="1" max="5" />
+        Hvor mange dage: <input type="number" name="daysToShow" min="1" max="5" value="@daysToShow" />
 </p>
 <input type="submit" value="Søg" />
 }
-   
 @if (Model != null)
 {
+   
      
     @for (int i = 0; i < daysToShow; i++)
     {
