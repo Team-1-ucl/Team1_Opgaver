@@ -5,8 +5,10 @@ using WebApplication2.Models;
 using WebApplication2.Services;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace WebApplication2.Controllers
+namespace WebApplication2.Controllers.v1
 {
+    [ApiController]
+    [ApiVersion("1")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -18,7 +20,7 @@ namespace WebApplication2.Controllers
             _myWeatherService = myWeatherService;
         }
 
-        
+
         public async Task<IActionResult> Index(string city, int daysToShow, string units)
         {
             ViewData["DaysToShow"] = daysToShow;

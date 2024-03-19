@@ -4,6 +4,7 @@ namespace WebApplication2.Models
 {
     public class Root
     {
+        #region My Weather API
         [JsonProperty("cod")]
         public string cod { get; set; }
 
@@ -19,7 +20,16 @@ namespace WebApplication2.Models
         [JsonProperty("city")]
         public City city { get; set; }
 
-        
+        #endregion
+
+
+        [JsonProperty("data")]
+        public List<Datum> data { get; set; }
+
+        [JsonProperty("meta")]
+        public Meta meta { get; set; }
+
+
     }
 
 

@@ -1,4 +1,6 @@
 ﻿@model WebApplication2.Models.Root
+
+
 @{
     ViewData["Title"] = "Home Page";
     int? daysToShow = ViewData["DaysToShow"] as int?; // Default value
@@ -53,6 +55,9 @@
                         <th>
                             temperatur
                         </th>
+                        <th>
+                            Vand
+                        </th>
 
 
                     </tr>
@@ -96,6 +101,9 @@
                                 <td>
                                     @Html.DisplayFor(model => item.main.temp)
                                 </td>
+                                <td>
+                                    @Html.DisplayFor(model => item.main.sea_level)
+                                </td>
                             </tr>
                         }
                     }
@@ -135,6 +143,9 @@
                                 </td>
                                 <td>
                                     @Html.DisplayFor(model => item.main.temp)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(model => item.main.sea_level)
                                 </td>
                             </tr>
                         }
